@@ -76,9 +76,9 @@ export default function Index() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center cursor-pointer" onClick={() => scrollTo("home")}>
               <img
-                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
+                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/7978ee04-0a6d-4128-8328-b3236d6c0297.png"
                 alt="Остов — Металлоконструкции"
-                style={{ height: "44px", width: "auto", objectFit: "contain", mixBlendMode: "screen" }}
+                style={{ height: "48px", width: "auto", objectFit: "contain" }}
               />
             </div>
 
@@ -413,9 +413,9 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <img
-                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
+                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/7978ee04-0a6d-4128-8328-b3236d6c0297.png"
                 alt="Остов"
-                style={{ height: "32px", width: "auto", objectFit: "contain", mixBlendMode: "screen" }}
+                style={{ height: "36px", width: "auto", objectFit: "contain" }}
               />
               <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>ООО Остов © 2006–2026. Все права защищены.</span>
             </div>
