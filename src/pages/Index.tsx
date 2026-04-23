@@ -366,8 +366,8 @@ export default function Index() {
 
             <div className="space-y-5">
               {[
-                { title: "Главный офис и склад", addr: "г. Москва, пр-т Промышленный, д. 14, стр. 2", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phone: "8 999 330-96-86", email: "ooo.ostov@mail.ru" },
-                { title: "Производственный цех", addr: "Московская обл., г. Химки, ул. Заводская, д. 8", hours: "Пн–Пт: 7:00–19:00", phone: "8 913 899-72-07", email: "ooo.ostov@mail.ru" },
+                { title: "Главный офис и склад", addr: "г. Новосибирск, ул. 2-я Станционная, 30 к16", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phone: "8 999 330-96-86", email: "ooo.ostov@mail.ru" },
+                { title: "Производственный цех", addr: "Новосибирская обл., с. Прокудское, ул. Рабочая, 13", hours: "Пн–Пт: 7:00–19:00", phone: "8 913 899-72-07", email: "ooo.ostov@mail.ru" },
               ].map((office, i) => (
                 <div key={i} className="p-6" style={{ background: "var(--steel-dark)", border: "1px solid var(--steel-border)", borderLeft: "3px solid var(--rust)" }}>
                   <h4 className="font-bold text-base uppercase mb-4" style={{ fontFamily: "Oswald, sans-serif", color: "var(--metal-text)" }}>{office.title}</h4>
