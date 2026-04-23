@@ -79,7 +79,7 @@ export default function Index() {
                 <Icon name="Triangle" size={16} color="#0d0f12" />
               </div>
               <span className="text-lg font-bold tracking-widest uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--metal-text)" }}>
-                Металл<span style={{ color: "var(--rust)" }}>Строй</span>
+                <span style={{ color: "var(--rust)" }}>Остов</span>
               </span>
             </div>
 
@@ -92,7 +92,7 @@ export default function Index() {
             </nav>
 
             <div className="hidden md:flex items-center gap-4">
-              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>+7 (800) 123-45-67</span>
+              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>8 999 330-96-86</span>
               <button onClick={() => scrollTo("contacts")} className="px-4 py-2 text-xs font-bold tracking-widest uppercase transition-all" style={{ fontFamily: "Oswald, sans-serif", background: "var(--rust)", color: "#0d0f12", border: "none", cursor: "pointer" }} onMouseEnter={(e) => (e.currentTarget.style.background = "var(--rust-bright)")} onMouseLeave={(e) => (e.currentTarget.style.background = "var(--rust)")}>
                 Связаться
               </button>
@@ -279,7 +279,7 @@ export default function Index() {
                 18 лет в <span style={{ color: "var(--rust)" }}>металле</span>
               </h2>
               <p className="text-base leading-relaxed mb-4" style={{ color: "var(--metal-shine)", fontFamily: "Roboto, sans-serif", fontWeight: 300 }}>
-                МеталлСтрой основан в 2006 году. За эти годы мы выросли из небольшого склада в полноценное металлообрабатывающее предприятие с собственным производством, парком оборудования и профессиональной командой.
+                Остов основан в 2006 году. За эти годы мы выросли из небольшого склада в полноценное металлообрабатывающее предприятие с собственным производством, парком оборудования и профессиональной командой.
               </p>
               <p className="text-base leading-relaxed mb-8" style={{ color: "var(--metal-shine)", fontFamily: "Roboto, sans-serif", fontWeight: 300 }}>
                 Мы работаем напрямую с крупнейшими металлургическими комбинатами России — это позволяет предлагать лучшие цены и гарантировать качество по ГОСТ.
@@ -366,8 +366,8 @@ export default function Index() {
 
             <div className="space-y-5">
               {[
-                { title: "Главный офис и склад", addr: "г. Москва, пр-т Промышленный, д. 14, стр. 2", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phone: "+7 (800) 123-45-67", email: "info@metallstroy.ru" },
-                { title: "Производственный цех", addr: "Московская обл., г. Химки, ул. Заводская, д. 8", hours: "Пн–Пт: 7:00–19:00", phone: "+7 (495) 765-43-21", email: "production@metallstroy.ru" },
+                { title: "Главный офис и склад", addr: "г. Москва, пр-т Промышленный, д. 14, стр. 2", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phone: "8 999 330-96-86", email: "ooo.ostov@mail.ru" },
+                { title: "Производственный цех", addr: "Московская обл., г. Химки, ул. Заводская, д. 8", hours: "Пн–Пт: 7:00–19:00", phone: "8 913 899-72-07", email: "ooo.ostov@mail.ru" },
               ].map((office, i) => (
                 <div key={i} className="p-6" style={{ background: "var(--steel-dark)", border: "1px solid var(--steel-border)", borderLeft: "3px solid var(--rust)" }}>
                   <h4 className="font-bold text-base uppercase mb-4" style={{ fontFamily: "Oswald, sans-serif", color: "var(--metal-text)" }}>{office.title}</h4>
@@ -416,7 +416,7 @@ export default function Index() {
               <div className="w-6 h-6 flex items-center justify-center" style={{ background: "var(--rust)" }}>
                 <Icon name="Triangle" size={11} color="#0d0f12" />
               </div>
-              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>МеталлСтрой © 2006–2026. Все права защищены.</span>
+              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>ООО Остов © 2006–2026. Все права защищены.</span>
             </div>
             <div className="flex gap-6">
               {["Политика конфиденциальности", "Реквизиты"].map((link, i) => (
