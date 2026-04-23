@@ -91,7 +91,7 @@ export default function Index() {
             </nav>
 
             <div className="hidden md:flex items-center gap-4">
-              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>8 999 330-96-86</span>
+              <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>+7 999 330-96-86 / +7 913 899-72-07</span>
               <button onClick={() => scrollTo("contacts")} className="px-4 py-2 text-xs font-bold tracking-widest uppercase transition-all" style={{ fontFamily: "Oswald, sans-serif", background: "var(--rust)", color: "#0d0f12", border: "none", cursor: "pointer" }} onMouseEnter={(e) => (e.currentTarget.style.background = "var(--rust-bright)")} onMouseLeave={(e) => (e.currentTarget.style.background = "var(--rust)")}>
                 Связаться
               </button>
@@ -365,8 +365,8 @@ export default function Index() {
 
             <div className="space-y-5">
               {[
-                { title: "Главный офис и склад", addr: "г. Новосибирск, ул. 2-я Станционная, 30 к16", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phone: "8 999 330-96-86", email: "ooo.ostov@mail.ru" },
-                { title: "Производственный цех", addr: "Новосибирская обл., с. Прокудское, ул. Рабочая, 13", hours: "Пн–Пт: 7:00–19:00", phone: "8 913 899-72-07", email: "ooo.ostov@mail.ru" },
+                { title: "Главный офис и склад", addr: "г. Новосибирск, ул. 2-я Станционная, 30 к16", hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00", phones: ["+7 999 330-96-86", "+7 913 899-72-07"], email: "ooo.ostov@mail.ru" },
+                { title: "Производственный цех", addr: "Новосибирская обл., с. Прокудское, ул. Рабочая, 13", hours: "Пн–Пт: 7:00–19:00", phones: [], email: "ooo.ostov@mail.ru" },
               ].map((office, i) => (
                 <div key={i} className="p-6" style={{ background: "var(--steel-dark)", border: "1px solid var(--steel-border)", borderLeft: "3px solid var(--rust)" }}>
                   <h4 className="font-bold text-base uppercase mb-4" style={{ fontFamily: "Oswald, sans-serif", color: "var(--metal-text)" }}>{office.title}</h4>
@@ -379,10 +379,12 @@ export default function Index() {
                       <Icon name="Clock" size={15} color="var(--rust)" />
                       <span className="text-sm" style={{ color: "var(--metal-shine)" }}>{office.hours}</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Phone" size={15} color="var(--rust)" />
-                      <a href={`tel:${office.phone.replace(/\D/g, "")}`} className="text-sm" style={{ color: "var(--metal-text)", textDecoration: "none" }} onMouseEnter={(e) => (e.currentTarget.style.color = "var(--rust)")} onMouseLeave={(e) => (e.currentTarget.style.color = "var(--metal-text)")}>{office.phone}</a>
-                    </div>
+                    {office.phones.map((phone, j) => (
+                      <div key={j} className="flex items-center gap-3">
+                        <Icon name="Phone" size={15} color="var(--rust)" />
+                        <a href={`tel:${phone.replace(/\D/g, "")}`} className="text-sm" style={{ color: "var(--metal-text)", textDecoration: "none" }} onMouseEnter={(e) => (e.currentTarget.style.color = "var(--rust)")} onMouseLeave={(e) => (e.currentTarget.style.color = "var(--metal-text)")}>{phone}</a>
+                      </div>
+                    ))}
                     <div className="flex items-center gap-3">
                       <Icon name="Mail" size={15} color="var(--rust)" />
                       <a href={`mailto:${office.email}`} className="text-sm" style={{ color: "var(--metal-text)", textDecoration: "none" }} onMouseEnter={(e) => (e.currentTarget.style.color = "var(--rust)")} onMouseLeave={(e) => (e.currentTarget.style.color = "var(--metal-text)")}>{office.email}</a>
