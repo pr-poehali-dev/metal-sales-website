@@ -78,7 +78,7 @@ export default function Index() {
               <img
                 src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
                 alt="Остов — Металлоконструкции"
-                style={{ height: "44px", width: "auto", objectFit: "contain", filter: "drop-shadow(0 0 6px rgba(255,255,255,0.08))" }}
+                style={{ height: "44px", width: "auto", objectFit: "contain", mixBlendMode: "screen" }}
               />
             </div>
 
@@ -415,7 +415,7 @@ export default function Index() {
               <img
                 src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
                 alt="Остов"
-                style={{ height: "32px", width: "auto", objectFit: "contain", opacity: 0.8 }}
+                style={{ height: "32px", width: "auto", objectFit: "contain", mixBlendMode: "screen" }}
               />
               <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>ООО Остов © 2006–2026. Все права защищены.</span>
             </div>
