@@ -78,7 +78,7 @@ export default function Index() {
               <img
                 src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/7978ee04-0a6d-4128-8328-b3236d6c0297.png"
                 alt="Остов — Металлоконструкции"
-                style={{ height: "96px", width: "auto", objectFit: "contain" }}
+                style={{ height: "192px", width: "auto", objectFit: "contain" }}
               />
             </div>
 
