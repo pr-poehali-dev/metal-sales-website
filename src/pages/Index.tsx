@@ -74,13 +74,12 @@ export default function Index() {
       <header className="fixed top-0 left-0 right-0 z-50" style={{ background: "rgba(13,15,18,0.97)", borderBottom: "1px solid var(--steel-border)", backdropFilter: "blur(12px)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("home")}>
-              <div className="w-8 h-8 flex items-center justify-center" style={{ background: "var(--rust)" }}>
-                <Icon name="Triangle" size={16} color="#0d0f12" />
-              </div>
-              <span className="text-lg font-bold tracking-widest uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--metal-text)" }}>
-                <span style={{ color: "var(--rust)" }}>Остов</span>
-              </span>
+            <div className="flex items-center cursor-pointer" onClick={() => scrollTo("home")}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
+                alt="Остов — Металлоконструкции"
+                style={{ height: "44px", width: "auto", objectFit: "contain", filter: "drop-shadow(0 0 6px rgba(255,255,255,0.08))" }}
+              />
             </div>
 
             <nav className="hidden md:flex items-center gap-8">
@@ -412,10 +411,12 @@ export default function Index() {
       <footer className="py-8" style={{ background: "var(--steel-dark)", borderTop: "1px solid var(--steel-border)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2" style={{ fontFamily: "Oswald, sans-serif" }}>
-              <div className="w-6 h-6 flex items-center justify-center" style={{ background: "var(--rust)" }}>
-                <Icon name="Triangle" size={11} color="#0d0f12" />
-              </div>
+            <div className="flex items-center gap-3">
+              <img
+                src="https://cdn.poehali.dev/projects/2a26c2d7-e0b9-4dcb-b326-51961abc6286/bucket/c885a1bc-7ff2-4595-8eab-499e1699de1f.jpeg"
+                alt="Остов"
+                style={{ height: "32px", width: "auto", objectFit: "contain", opacity: 0.8 }}
+              />
               <span style={{ color: "var(--metal-shine)", fontSize: "13px" }}>ООО Остов © 2006–2026. Все права защищены.</span>
             </div>
             <div className="flex gap-6">
